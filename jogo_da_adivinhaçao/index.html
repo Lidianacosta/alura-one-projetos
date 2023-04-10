@@ -1,1 +1,78 @@
+    <meta charset="UTF-8">
+    <title>jogo da adivinhação</title>
+    <h1 class="titulo">bem vindo ao jogo da adivinhação</h1>
+    <hr>
+    <p>tente adivinhar os numeros pensados</p><br>
+    <input/>
+    <button>adivinhar</button>
+    <br> <br> <br>
+    <p>Recaregue a pagina para gera os numeros aleatorios <br>
+    obs: os números pensados estão no console.</p>
 
+   <style>
+    body {
+        background-color:chartreuse;
+   }
+
+   .titulo{
+    text-align: center;
+   }
+   </style>
+    
+    
+    <script>
+
+        function numeros_aleatorios() {
+            return Math.round(Math.random() * 10);
+        }
+        
+        function sorteia(qtd) {
+            let numeros_pensados = [];
+            let i = 1;
+            let achou = true;
+            while (i <= qtd) {
+                n_a = numeros_aleatorios();
+                if (n_a !== 0) {
+                     achou = false;
+                
+                for (let index = 0; index < numeros_pensados.length; index++) {
+                    if(numeros_pensados[index] == n_a){
+                         achou = true;
+                         break;
+                    }
+                }
+                if(achou == false){  
+                    numeros_pensados.push(n_a);   
+                    i++;
+                }
+            } 
+            }
+            console.log(numeros_pensados);
+            return numeros_pensados;
+        }
+
+        function verifica() {
+            achou = false;
+            for (let i = 0; i < numeros_pensados.length; i++) {
+                if(numeros_pensados[i] == input.value){
+                   alert(`Aeeeeee vc acertou!`);
+                    achou = true;
+                    break;
+                }
+             }
+            if(achou == false){
+                alert(`Que pena vc errouuuu !`);
+            }
+            input.value = ` `;
+            input.focus();
+        }
+
+        let  numeros_pensados = sorteia(5);
+
+        let input = document.querySelector(`input`);
+        input.focus();
+
+        let button = document.querySelector(`button`);
+        button.onclick = verifica;
+
+    </script>
