@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<header>
+    <div class="caixa">
+        <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+        <nav>
+            <ul>
+                <li><a href="Barbearia-Alura.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+    <form>
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder=(XX)XXXXX-XXXX>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+        <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-emil"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                    id="radiradio-telefone">Telefone</label>
+
+            <label for="radio-WhatsApp">
+                <input type="radio" name="contato" value="WhatsApp" id="radio-WhatsApp" checked>WhatsApp</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="enviar formulário" class="enviar">
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+    <p class="Copyright">&copy; Copyright Barbearia Alura – 2019</p>
+</footer>
+
+</html>
+
+<!--
+Nesta aula, vimos:
+
+Uma revisão do conteúdo aprendido no treinamento anterior
+Uma introdução ao projeto do treinamento
+A criação da página de contato
+Um pouco sobre os formulários-->
+
+<!--
+A tag <label> é uma etiqueta para a entrada de dados, para o <input>. -->
+
+<!-- A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.-->
+
+<!--
+Nesta aula, aprendemos:
+
+A criar um formulário HTML
+A tag que o representa é a <form>
+A tag <input>, para a entrada de dados do usuário
+A criar uma etiqueta para o input, com a tag <label>
+A conectar um input com o seu label
+Colocamos um id para o input e associamos esse id ao atributo for do label
+Alguns tipos de input, como text e submit
+Que label possui o display inline e o input possui display inline-block
+A estilizar o nosso formulário -->
+
+<!--
+Nesta aula, vimos:
+
+O textarea, para entradas de texto de mais de uma linha
+O input do tipo radio
+Como agrupar vários input do tipo radio, impedindo que mais de um input seja selecionado
+O input do tipo checkbox
+Que podemos criar um input dentro de um label, assim associando-os
+Mais estilizações para a nossa página
+Como funciona a hierarquia no CSS
+O select, que é seletor, um campo de seleção de um item, e o option, que representa cada opção do seletor -->
+
+<!--
+Quando adicionamos a propriedade required, o navegador nos ajuda a validar se aquele campo está -->
+
+<!--a tag <legend> que usamos para um título de um grupo de campos em qualquer formulário.-->
+
+<!--Nesta aula, aprendemos:
+
+Alguns tipos de inputs para celular: email, tel, number, password, date, datetime, month e search
+Como não permitir que um campo não seja preenchido, através do atributo required
+Como exibir uma sugestão de preenchimento para os campos, através do atributo placeholder
+Como deixar uma opção marcada por padrão nos nossos input radio e checkbox, através do atributo checked
+Como estruturar melhor o nosso código com fieldset e legend
+Como adicionar uma alternativa à imagem, descrevendo-a, com o atributo alt-->
+
+<!--Utilizamos a propriedade transition para prover uma transição visual de um elemento.-->
+
+<!--Utilizamos a propriedade transform: scale() para aumentar um elemento proporcionalmente.-->
+
+<!--Nesta aula, aprendemos:
+
+Como estilizar o botão de envio de formulário
+A realizar transições nos nossos elementos, com a propriedade CSS transition
+A modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento, através da propriedade CSS cursor
+A realizar transformações nos nossos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo, através da propriedade CSS transform-->
+
+<!--Utilizamos a tag <tr> para marcar uma linha de uma tabela.-->
+
+<!--Utilizamos a tag <td> para marcar uma coluna de uma tabela.-->
+
+<!--As tags <thead>, <tbody> e <tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.-->
+
+<!--As tabelas também nos oferecem a possibilidade de juntar células e montar um visual diferente. Por exemplo, quando uma linha, que deveria ter 5 células, passa a mostrar só "uma célula".
+
+Esse efeito é conseguido através da propriedade colspan=X, onde X é o número de células que você quer agrupar.
+
+Portanto, em uma tabela de 5 colunas, para ter uma célula única na linha, usamos um código assim:
+
+<tr>
+    <td colspan="5">Rio de Janeiro</td> 
+    </tr>COPIAR CÓDIGO
+    
+    Experimente na sua página para ver o resultado!-->
+
+
+<!--Nesta aula, aprendemos:
+
+A criar uma tabela HTML
+A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela
+A estilizar a tabela-->
