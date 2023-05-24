@@ -5,9 +5,12 @@
 <head>
 
     <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width">
     <title>Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,6 +34,8 @@
         <section class="principal">
             <h2 class="titulo-principal"> Sobre a Barbearia Alura</h2>
 
+            <img class="utensilios" src="utensilios.jpg" alt="Utensílios de um barbeiro.">
+
             <p> Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de
                 melhor
                 para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
@@ -46,24 +51,44 @@
 
         </section>
 
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+            <div class="mapa-conteudo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448598130907!2d-46.634653385542414!3d-23.588239368469353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1580916426151!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+        </section>
+
         <section class="beneficios">
 
             <h3 class="titulo-principal">Beneficios</h3>
 
-            <ul>
-                <li class="itens">Atendimento aos Clientes</li>
-                <li class="itens">Espaço Diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais Qualificados</li>
-            </ul>
+            <div class="conteudo-beneficios">
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaço Diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
 
-            <img src="beneficios.jpg" class="imagemBenificios">
+                </ul><img src="beneficios.jpg" class="imagem-beneficios">
+            </div>
+
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
 
         </section>
 
     </main>
-
-
 
     <footer>
         <img src="logo-branco.png" alt="Logo da Barbearia Alura">
@@ -78,3 +103,145 @@
 
 <!--Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>.-->
 
+<!--Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele-->
+
+<!--Nesta aula, aprendemos:
+
+A ajustar a página principal para utilizar os mesmos padrões da página de produtos
+Medidas proporcionais com CSS
+Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+Como limpar o float, com a propriedade clear do CSS-->
+
+<!--Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before-->
+
+
+<!--A propriedade :after serve para criar um pseudo-elemento após um elemento do HTML.-->
+
+
+<!--Nesta aula, aprendemos:
+
+Seletores avançados CSS
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}COPIAR CÓDIGO
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}COPIAR CÓDIGO
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}COPIAR CÓDIGO
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}COPIAR CÓDIGO
+Como fazer contas com CSS, com a propriedade calc-->
+
+
+<!--Nesta aula, aprendemos:
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+Como manipular a opacidade das cores
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow-->
+
+
+
+
+
+<!-- 02
+Seletores avançados
+PRÓXIMA ATIVIDADE
+
+Pause
+Mute
+Current Time 4:51
+/
+Duration 6:09
+1.25xPlayback Rate
+Open quality selector menuPicture-in-Picture
+Fullscreen
+Transcrição
+Nesta aula, estudaremos os seletores avançados, uma forma específica de fazermos seleção de elementos de maneira mais rebuscada. Suponhamos que no interior da <main>, antes de se iniciar a <section>, nós tenhamos um <p> com um conteúdo qualquer. Se retornarmos para o nosso CSS,
+
+<main>
+            <p> qualquer conteudo</p>
+            
+                        <section class="principal">
+                                        <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+                                        
+                                                        <img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro." />
+                                                        
+                                                                        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                                                                        
+                                                                                        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+                                                                                        
+                                                                                                        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+                                                                                                        </section>
+                                                                                                        COPIAR CÓDIGO
+                                                                                                        No CSS, como fazemos para marcar esse parágrafo de vermelho? Podemos tentar escrever:
+                                                                                                        
+                                                                                                        main p {
+                                                                                                            background: red;
+                                                                                                            }COPIAR CÓDIGO
+                                                                                                            Ao carregarmos no navegador, veremos que todos os parágrafos estarão marcados de vermelho, pois coletamos os parágrafos que estavam dentro da <section>, afinal coletamos todos os parágrafos que estão dentro da <main>. Como podemos selecionar um parágrafo de maneira individual?
+                                                                                                            
+                                                                                                            Com os seletores avançados do CSS, podemos selecionar os filhos diretos de <main>, para tanto, utilizaremos o sinal >, e todo os outros parágrafos serão ignorados, afinal são filhos diretos da <section> e não de <main>.
+                                                                                                            
+                                                                                                            main > p {
+                                                                                                                background: red; 
+                                                                                                                }COPIAR CÓDIGO
+                                                                                                                Mas como selecionar o primeiro parágrafo que sucede uma imagem, por exemplo? Conseguimos selecionar o primeiro filho com o seletor que acabamos de conhecer, mas neste caso estamos falando do primeiro irmão que vem depois de um elemento.
+                                                                                                                
+                                                                                                                Neste caso, usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+"
+                                                                                                                
+                                                                                                                img + p { 
+                                                                                                                    background: blue;COPIAR CÓDIGO
+                                                                                                                    Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~
+                                                                                                                    
+                                                                                                                    img ~ p {
+                                                                                                                        background: yellow
+                                                                                                                        } COPIAR CÓDIGO
+                                                                                                                        É importante lembrar que um seletor pode sobrescrever o outro, pois todos possuem a mesma força. Os seletores avançados nos ajudam a criar estilos mais complexos e utilizar o CSS de uma maneira incrível, com uma autonomia maior do HTML.
+                                                                                                                        
+                                                                                                                        No CSS podemos, inclusive, excluir itens específicos. Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:
+                                                                                                                        
+                                                                                                                        .principal p:not(#missao) {
+                                                                                                                            background: orange;
+                                                                                                                            }COPIAR CÓDIGO
+                                                                                                                            A exclusão é um elemento poderoso no CSS, principalmente quando realizamos manutenção em algum código que já existe e que não devemos modificar tanto o HTML.
+                                                                                                                            
+                                                                                                                             DISCUTIR NO FORUM
+                                                                                                                             PRÓXIMA ATIVIDADE
+                                                                                                                             
+                                                                                                                             ícone HTML5 e CSS3 parte 4: avançando no CSS HTML5 e CSS3 parte 4: avançando no CSS
+                                                                                                                             53% 
+                                                                                                                             AULA
+                                                                                                                             04
+                                                                                                                              Selecionando qualquer coisa
+                                                                                                                               AULA ATUAL
+                                                                                                                               
+                                                                                                                               04. Selecionando qualquer coisa
+                                                                                                                                ATIVIDADES
+                                                                                                                                01
+                                                                                                                                Projeto da aula anterior
+                                                                                                                                02
+                                                                                                                                Seletores avançados
+                                                                                                                                07min
+                                                                                                                                03
+                                                                                                                                Selecionando um elemento específico
+                                                                                                                                04
+                                                                                                                                Cálculos com CSS
+                                                                                                                                05min
+                                                                                                                                05
+                                                                                                                                Medidas proporcionais
+                                                                                                                                06
+                                                                                                                                Consolidando o seu conhecimento
+                                                                                                                                07
+                                                                                                                                O que aprendemos?
+                                                                                                                                 OUTROS LINKSLINKS
+                                                                                                                                  Discord Alura
+                                                                                                                                   Fórum do curso
+                                                                                                                                   Voltar para Dashboard
+                                                                                                                                   MODO NOTURNO
+                                                                                                                                   Gravatar de Lidiana Costa De Souza Lidiana Costa De Souza
+                                                                                                                                   23.6k xp
+                                                                                                                                   Logo da Alura-->
