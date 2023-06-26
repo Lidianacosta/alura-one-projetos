@@ -1,9 +1,9 @@
-package src.br.com.bytebank.banco.testes;
+package br.com.bytebank.banco.testes;
 
-import src.br.com.bytebank.banco.modelo.Administrador;
-import src.br.com.bytebank.banco.modelo.Cliente;
-import src.br.com.bytebank.banco.modelo.Gerente;
-import src.br.com.bytebank.banco.modelo.SistemaInterno;
+import br.com.bytebank.banco.modelo.Administrador;
+import br.com.bytebank.banco.modelo.Cliente;
+import br.com.bytebank.banco.modelo.Gerente;
+import br.com.bytebank.banco.modelo.SistemaInterno;
 
 public class TestaSistema {
     public static void main(String[] args){

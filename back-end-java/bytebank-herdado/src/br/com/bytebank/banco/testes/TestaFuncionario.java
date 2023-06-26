@@ -1,7 +1,7 @@
-package src.br.com.bytebank.banco.testes;
+package br.com.bytebank.banco.testes;
 
-import src.br.com.bytebank.banco.modelo.Funcionario;
-import src.br.com.bytebank.banco.modelo.Gerente;
+import br.com.bytebank.banco.modelo.Funcionario;
+import br.com.bytebank.banco.modelo.Gerente;
 
 public class TestaFuncionario {
     public static void main(String[] args) {

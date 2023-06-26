@@ -1,9 +1,10 @@
-package src.br.com.bytebank.banco.testes;
+package br.com.bytebank.banco.testes;
 
-import src.br.com.bytebank.banco.modelo.Gerente;
-import src.br.com.bytebank.banco.modelo.SistemaInterno;
+import br.com.bytebank.banco.modelo.Gerente;
+import br.com.bytebank.banco.modelo.SistemaInterno;
 
 public class TestaGerente {
+    
     public static void main(String[] args){
         System.out.println("Hello, world!!");
 

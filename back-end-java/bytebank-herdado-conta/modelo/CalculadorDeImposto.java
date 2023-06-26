@@ -3,6 +3,8 @@ package src.br.com.bytebank.banco.modelo;
 /** Class para calcular impostos
  * @author Lidiana costa
  * @version 0.1
+ * 
+ * 
  */
 
 public class CalculadorDeImposto {
@@ -18,6 +20,10 @@ public class CalculadorDeImposto {
         this.totalImposto += t.getValorImposto();
     }
 
+    /**
+     * 
+     * @return double
+     */
     public double getTotalImposto() {
         return totalImposto;
     }

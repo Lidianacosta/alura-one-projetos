@@ -1,9 +1,9 @@
-package src.br.com.bytebank.banco.testes;
+package br.com.bytebank.banco.testes;
 
-import src.br.com.bytebank.banco.modelo.ControleBonificacao;
-import src.br.com.bytebank.banco.modelo.Designer;
-import src.br.com.bytebank.banco.modelo.EditorVideo;
-import src.br.com.bytebank.banco.modelo.Gerente;
+import br.com.bytebank.banco.modelo.ControleBonificacao;
+import br.com.bytebank.banco.modelo.Designer;
+import br.com.bytebank.banco.modelo.EditorVideo;
+import br.com.bytebank.banco.modelo.Gerente;
 
 public class TestaReferencia {
     public static void main(String[] args){
