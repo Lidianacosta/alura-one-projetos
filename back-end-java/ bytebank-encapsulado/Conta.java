@@ -1,4 +1,3 @@
-import src.br.com.bytebank.banco.modelo.Cliente;
 
 public class Conta {
     private Cliente titular;
